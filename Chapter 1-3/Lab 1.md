@@ -14,7 +14,7 @@
 
 We can see that **Lab01-01.exe** was first submitted to Virustotal on 2012-02-16 07:31:54 and since then it has as 41/68 detection rate:
 
-![Lab01-01_exe-vt](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-01_exe-vt.png)
+![](./Chapter 1-3.assets/Lab01-01_exe-vt.png)
 
 ##### Lab01-01.dll
 
@@ -26,7 +26,7 @@ We can see that **Lab01-01.exe** was first submitted to Virustotal on 2012-02-16
 
 File **Lab01-01.dll** was first submitted to Virustotal on 2011-07-04 19:57:48 and since then it has as 32/68 detection rate:
 
-![Lab01-01_dll-vt](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-01_dll-vt.png)
+![Lab01-01_dll-vt](.Lab 1.assets/Lab01-01_dll-vt.png)
 
 ### 2. When were these files compiled?
 
@@ -34,13 +34,13 @@ File **Lab01-01.dll** was first submitted to Virustotal on 2011-07-04 19:57:48 a
 
 *PEview > IMAGE_FILE_HEADER*
 
-![Lab01-01_exe-PeView](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-01_exe-PeView.png)
+![Lab01-01_exe-PeView](./Chapter 1-3.assets/Lab01-01_exe-PeView.png)
 
 ##### Lab01-01.dll
 
 *PEview > IMAGE_FILE_HEADER*
 
-![Lab01-01_dll-PeView](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-01_dll-PeView.png)
+![Lab01-01_dll-PeView](./Chapter 1-3.assets/Lab01-01_dll-PeView.png)
 
 ### 3. Are there any indications that either of these files is packed or obfuscated? If so, what are these indicators?
 
@@ -123,13 +123,13 @@ The propose of these file is to scan the system for a file(s), manipulate it and
 
 We can see that **Lab01-02.exe** was first submitted to Virustotal on 2011-07-02 17:02:09 and since then it has as 45/69 detection rate:
 
-![Lab01-02-vt](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-02-vt.png)
+![Lab01-02-vt](./Chapter 1-3.assets/Lab01-02-vt.png)
 
 ### 2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
 
 Running the PEiD program it show that the file is packed with UPX
 
-![Lab01-02-PEiD2](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-02-PEiD2.png)
+![Lab01-02-PEiD2](./Chapter 1-3.assets/Lab01-02-PEiD2.png)
 
 ```powershell
 C:> upx -d Lab01-02.exe 
@@ -137,7 +137,7 @@ C:> upx -d Lab01-02.exe
 
 After executing the command above, you can now see on PEiD, that the Entry Point (EP) is at .text section. Also, another proof that we have unpack the file is the information regarding the compiler (Microsoft Visual C++ 6.0).
 
-![Lab01-02-PEiD1](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-02-PEiD1.png)
+![Lab01-02-PEiD1](./Chapter 1-3.assets/Lab01-02-PEiD1.png)
 
 ### 3. Do any imports hint at this program’s functionality? If so, which imports are they and what do they tell you?
 
@@ -165,17 +165,17 @@ Internet Explorer 8.0  
 
 We can see that **Lab01-03.exe** was first submitted to Virustotal on 2011-07-04 22:00:08 and since then it has as 61/70 detection rate:
 
-![Lab01-03-vt](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-03-vt-1586452188691.png)
+![Lab01-03-vt](./Chapter 1-3.assets/Lab01-03-vt-1586452188691.png)
 
 ### 2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
 
 With the image bellow we can verify the the virtual size is bigger than the raw size.
 
-![Lab01-03-PeView](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-03-PeView-1586452188691.png)
+![Lab01-03-PeView](./Chapter 1-3.assets/Lab01-03-PeView-1586452188691.png)
 
 The PEiD program tell us that the file is packed with FSG and it is unable to unpack the file.
 
-![Lab01-03-PEiD2](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-03-PEiD2-1586452188691.png)
+![Lab01-03-PEiD2](./Chapter 1-3.assets//Lab01-03-PEiD2-1586452188691.png)
 
 Another indicatior that the program is packed is the few number of import functions: **LoadLibraryA** and **GetProcAddress**. A normal program will never import only two functions
 
@@ -199,7 +199,7 @@ With the packed file is not possible to have readable strings, so we are unable 
 
 We can see that **Lab01-04.exe** was first submitted to Virustotal on 2011-07-06 00:05:42 and since then it has as 57/71 detection rate:
 
-![Lab01-04-vt](/home/sribeiro/Documents/GitLab/Matraficas/Lab%201.assets/Lab01-04-vt.png)
+![Lab01-04-vt](./Chapter 1-3.assets/Lab01-04-vt.png)
 
 ### 2. Are there any indications that this file is packed or obfuscated? If so, what are these indicators? If the file is packed, unpack it if possible.
 
@@ -216,7 +216,7 @@ Another indicator of the file not being packed is that we can see multiple strin
 
 The last the indicator of not being packed is the compiler information provide by PEiD, which is Microsoft Visual C++ 6.0.
 
-<img title="" src="file:///home/sribeiro/.var/app/com.github.marktext.marktext/config/marktext/images/2020-06-25-17-43-20-image.png" alt="" data-align="center">
+![](./Lab 1.assets/2020-06-25-17-43-20-image.png)
 
 ### 3. When was this program compiled?
 
